@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:DJView" 
+    xmlns:view="clr-namespace:DJView.Views"
+    x:Class="DJView.DJViewPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Text="DJView MVC Demo" VerticalOptions="Center" HorizontalOptions="Center" />
+        <view:DJControlView x:Name="djView" Grid.Row="1"/>
+        <view:BeatView x:Name="beatView" Grid.Row="2"/>
+    </Grid>
+</ContentPage>

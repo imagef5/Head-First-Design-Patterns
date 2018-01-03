@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DJView.Views.DJControlView">
+	<ContentView.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="startButton" Text="Start" Grid.Row="0" Grid.Column="0" Clicked="start_Clicked"/>
+            <Button x:Name="stopButton" Text="Stop" Grid.Row="0" Grid.Column="1" Clicked="stop_Clicked"/>
+            <Button x:Name="quitButton" Text="Quit" Grid.Row="0" Grid.Column="2" />
+            <Label Text="Enter BPM" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="bpmEntry" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+            <Button Grid.Row="2" Grid.Column="0" Clicked="decrease_Clicked">
+                <Button.Text>&lt;&lt;</Button.Text>
+            </Button>
+            <Button Text="Set" Grid.Row="2" Grid.Column="1" Clicked="set_Clicked"/>
+            <Button Text=">>" Grid.Row="2" Grid.Column="2" Clicked="increase_Clicked"/>
+        </Grid>
+	</ContentView.Content>
+</ContentView>

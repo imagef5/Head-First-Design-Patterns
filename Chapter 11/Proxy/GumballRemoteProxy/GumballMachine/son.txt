@@ -1,0 +1,1 @@
+{"State":{},"Location":"명동","Count":125,"StateComment":"동전 투입 대기중"}

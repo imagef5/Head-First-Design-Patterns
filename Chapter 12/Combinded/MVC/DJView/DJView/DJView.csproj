@@ -29,7 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="DJViewPage.xaml" />
     <EmbeddedResource Include="Views\DJControlView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -38,13 +37,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DJViewPage.xaml" />
+    <EmbeddedResource Include="Views\HeartBeatViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DJViewPage.xaml.cs">
-      <DependentUpon>DJViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IBMPObserver.cs" />
@@ -68,6 +73,15 @@
     <Compile Include="Models\HeartModel.cs" />
     <Compile Include="Models\HeartAdapter.cs" />
     <Compile Include="Controllers\HeartController.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DJViewPage.xaml.cs">
+      <DependentUpon>DJViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeartBeatViewPage.xaml.cs">
+      <DependentUpon>HeartBeatViewPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

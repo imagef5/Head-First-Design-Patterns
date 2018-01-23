@@ -16,16 +16,9 @@ namespace DJView
         {
             InitializeComponent();
             #region For MVC Test
-            //IBeatModel model = new BeatModel();
-            //IDJController btmController = new DJController(djView, model);
-            //IBeatController beatController = new BeatController(beatView, model);
-            #endregion
-
-            #region For HeartAdapter Test
-            IHeartModel heartModel = new HeartModel();
-            IBeatModel beatModel = new HeartAdapter(heartModel);
-            IDJController btmController = new DJController(djView, beatModel);
-            IBeatController heartController = new HeartController(beatView, beatModel);
+            IBeatModel model = new BeatModel();
+            IDJController btmController = new DJController(djView, model);
+            IBeatController beatController = new BeatController(beatView, model);
             #endregion
         }
     }

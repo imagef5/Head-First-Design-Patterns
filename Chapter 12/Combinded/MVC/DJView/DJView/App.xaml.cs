@@ -14,7 +14,7 @@ namespace DJView
         {
             InitializeComponent();
 
-            MainPage = new DJViewPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
